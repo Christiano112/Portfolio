@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+:root {
+  --my-primary: #070707;
+  --my-secondary: #EB6C00;
+  --background-color: #686868;
+  --my-black: #1A0E01;
+  --my-brown: #C26624;
+  --my-white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--my-primary);
+}
+
+.container {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--my-primary);
+  color: var(--my-white);
+  width: 100%;
+  min-width: 100%;
+}
+
+nav {
+  padding: 3rem 0;
+}
+nav ul {
+  font-size: 1.2rem;
+}
+nav ul li {
+  margin: 0 3rem;
+}
+nav ul li .nav-link {
+  color: #CFCFC9;
+}
+nav ul li .nav-link:hover {
+  color: var(--my-white);
+  border-bottom: 2px solid var(--my-black);
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+nav ul li:last-child {
+  background: var(--my-brown);
+  padding: 0 1rem;
+  border: none;
+}
+nav ul li:last-child .nav-link {
+  color: var(--my-white);
+  font-weight: bold;
+}
+
+/***** HOME *****/
+.home {
+  padding-bottom: 7rem;
+}
+.home .main-text {
+  color: var(--my-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem;
+}
+.home .main-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 4rem;
+  margin: 2rem 0;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
+}
+.home .main-text h1 span {
+  color: #C26624;
+}
+.home .main-text p {
+  color: #CDBCB4;
+}
+.home .main-text .hire {
+  margin: 2rem 0;
+  display: flex;
+  gap: 2rem;
+}
+.home .main-text .hire button {
+  background: var(--my-brown);
+  color: var(--my-white);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.home .main-text .hire button:last-child {
+  background: var(--my-white);
+  color: var(--my-brown);
+}
+.home .main-image {
+  height: 40rem;
+  width: 30rem;
+}
+.home .main-image img {
+  height: 100%;
+  width: 100%;
+}
+
+/***** End HOME *****/
+/***** ABOUT ME *****/
+.about-me {
+  padding-bottom: 7rem;
+}
+.about-me .about-me_image {
+  width: 20rem;
+  height: 20rem;
+}
+.about-me .about-me_image img {
+  height: 100%;
+  width: 100%;
+}
+.about-me .about-me_text h4 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2rem;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
+  color: var(--my-brown);
+  margin-bottom: 2rem;
+}
+.about-me .about-me_text h1 {
+  margin-bottom: 3rem;
+  text-transform: capitalize;
+}
+.about-me .about-me_text p {
+  line-height: 1rem;
+}
+.about-me .about-me_text p a {
+  color: #C26624;
+}
+
+/***** End ABOUT ME *****/
+/***** SPECIALIZE *****/
+.specialize {
+  padding-bottom: 10rem;
+}
+.specialize h1 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+.specialize .col {
+  border: 2px solid var(--my-brown);
+}
+.specialize .col:first-of-type {
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+.specialize .col:nth-child(2) {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.specialize .col:nth-child(3) {
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.specialize .col h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2rem;
+  word-spacing: 0.5rem;
+  margin-bottom: 1rem;
+}
+.specialize .col p {
+  font-size: 0.8rem;
+}
+.specialize .col .special-image {
+  background: var(--my-brown);
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: relative;
+  margin: 2rem 0 3rem 1rem;
+}
+.specialize .col .special-image img {
+  height: 3rem;
+  width: 3rem;
+  vertical-align: middle;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/***** End SPECIALIZE *****/
+/***** WORK *****/
+.work {
+  padding-bottom: 10rem;
+}
+.work .col {
+  margin-bottom: 3rem;
+}
+.work h1 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.work .work-text {
+  width: 50%;
+  align-self: center;
+}
+.work .work-text h5 {
+  color: var(--my-brown);
+  font-size: 2rem;
+  line-height: 4rem;
+}
+.work .work-image {
+  height: 20rem;
+  width: 50%;
+  transition: all 3s ease-in-out;
+}
+.work .work-image img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  filter: hue-rotate(30deg);
+}
+.work .work-image img:hover {
+  opacity: 1;
+}
+.work button {
+  background: var(--my-secondary);
+  color: var(--my-white);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+}
+
+/***** End WORK *****/
+/***** TESTIMONIALS *****/
+.testimonials {
+  padding-bottom: 10rem;
+}
+.testimonials .col:nth-of-type(3) {
+  background: var(--my-primary);
+  margin-right: -5rem;
+  z-index: 100;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+.testimonials .testimonial-image {
+  height: 10rem;
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+.testimonials .testimonial-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.testimonials h5 {
+  color: var(--my-secondary);
+  font-size: 1rem;
+}
+.testimonials .testimonial-header {
+  background: var(--my-brown);
+}
+.testimonials .testimonial-header h3 {
+  font-size: 4rem;
+  color: #5E5C5C;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  text-orientation: sideways-right;
+  padding: 1rem 0 1rem 5rem;
+}
+
+/***** End TESTIMONIALS *****/
+/***** CONTACT *****/
+.contact {
+  padding-bottom: 3rem;
+}
+.contact .col h5 {
+  font-size: 1.5rem;
+}
+.contact .col a {
+  text-decoration: none;
+  color: var(--my-white);
+  font-size: 1rem;
+  padding: 0 0.1rem;
+}
+.contact .col .icons a {
+  padding: 0 0.5rem;
+  font-size: 2rem;
+}
+
+/***** End CONTACT *****//*# sourceMappingURL=styles.css.map */

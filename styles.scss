@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --my-primary: #070707;
+    --my-secondary: #EB6C00;
+    --background-color: #686868;
+    --my-black: #1A0E01;
+    --my-brown: #C26624;
+    --my-white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--my-primary);
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--my-primary);
+    color: var(--my-white);
+    width: 100%;
+    min-width: 100%;
+}
+
+nav {
+    padding: 3rem 0;
+
+    ul {
+        font-size: 1.2rem;
+
+        li {
+            margin: 0 3rem;
+
+            .nav-link {
+                color: #CFCFC9;
+            }
+
+            .nav-link:hover {
+                color: var(--my-white);
+                border-bottom: 2px solid var(--my-black);
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+
+        li:last-child {
+            background: var(--my-brown);
+            padding: 0 1rem;
+            border: none;
+
+            .nav-link {
+                color: var(--my-white);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/***** HOME *****/
+.home {
+    padding-bottom: 7rem;
+
+    .main-text {
+        color: var(--my-white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 3rem;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 4rem;
+            margin: 2rem 0;
+            word-spacing: .5rem;
+            letter-spacing: .2rem;
+
+            span {
+                color: #C26624;
+            }
+        }
+
+        p {
+            color: #CDBCB4;
+        }
+
+        .hire {
+            margin: 2rem 0;
+            display: flex;
+            gap: 2rem;
+
+            button {
+                background: var(--my-brown);
+                color: var(--my-white);
+                border: none;
+                padding: 1rem 2rem;
+                font-size: 1.5rem;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+            }
+
+            button:last-child {
+                background: var(--my-white);
+                color: var(--my-brown);
+            }
+        }
+    }
+
+    .main-image {
+        height: 40rem;
+        width: 30rem;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+/***** End HOME *****/
+
+/***** ABOUT ME *****/
+.about-me {
+    padding-bottom: 7rem;
+
+    .about-me_image {
+        width: 20rem;
+        height: 20rem;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .about-me_text {
+
+        h4 {
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 2rem;
+            word-spacing: .5rem;
+            letter-spacing: .2rem;
+            color: var(--my-brown);
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 3rem;
+            text-transform: capitalize;
+        }
+
+        p {
+            line-height: 1rem;
+
+            a {
+                color: #C26624;
+            }
+        }
+    }
+}
+/***** End ABOUT ME *****/
+
+/***** SPECIALIZE *****/
+.specialize {
+    padding-bottom: 10rem;
+
+    h1 {
+        margin-bottom: 3rem;
+        font-size: 2rem;
+    }
+
+
+    .col {
+        border: 2px solid var(--my-brown);
+
+        &:first-of-type {
+            border-bottom-left-radius: 2rem;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+        }
+
+        &:nth-child(2) {
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            // background: var(--my-brown);
+            // color: var(--my-primary);
+        }
+
+        &:nth-child(3) {
+            border-top-right-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 2rem;
+            word-spacing: .5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: .8rem;
+        }
+
+        .special-image {
+            background: var(--my-brown);
+            height: 4rem;
+            width: 4rem;
+            border-radius: 50%;
+            position: relative;
+            margin: 2rem 0 3rem 1rem;
+
+            img {
+                height: 3rem;
+                width: 3rem;
+                vertical-align: middle;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+/***** End SPECIALIZE *****/
+
+
+/***** WORK *****/
+.work {
+    padding-bottom: 10rem;
+
+    .col {
+        margin-bottom: 3rem;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    .work-text {
+        width: 50%;
+        align-self: center;
+
+        h5 {
+            color: var(--my-brown);
+            font-size: 2rem;
+            line-height: 4rem;
+        }
+    }
+
+    .work-image {
+        height: 20rem;
+        width: 50%;
+        transition: all 3s ease-in-out;
+
+        img {
+            height: 100%;
+            width: 100%;
+            opacity: .5;
+            filter: hue-rotate(30deg);
+            
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    button {
+        background: var(--my-secondary);
+        color: var(--my-white);
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+    }
+}
+/***** End WORK *****/
+
+
+/***** TESTIMONIALS *****/
+.testimonials {
+    padding-bottom: 10rem;
+
+    .col:nth-of-type(3) {
+        background: var(--my-primary);
+        margin-right: -5rem;
+        z-index: 100;
+        border-top-right-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+    }
+
+    .testimonial-image {
+        height: 10rem;
+        width: 10rem;
+        margin-bottom: 2rem;
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            vertical-align: middle;
+        }
+    }
+
+    h5 {
+        color: var(--my-secondary);
+        font-size: 1rem;
+    }
+
+    .testimonial-header {
+        background: var(--my-brown);
+
+        h3 {
+            font-size: 4rem;
+            color: #5E5C5C;
+            writing-mode: vertical-lr;
+            text-orientation: sideways-right;
+            // padding-left: 5rem;
+            padding: 1rem 0 1rem 5rem;
+        }
+    }
+}
+/***** End TESTIMONIALS *****/
+
+/***** CONTACT *****/
+.contact {
+    padding-bottom: 3rem;
+
+    .col {
+
+        h5 {
+            font-size: 1.5rem;
+            // font-weight: 600;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--my-white);
+            font-size: 1rem;
+            padding: 0 .1rem;
+        }
+
+        .icons {
+            
+            a {
+                padding: 0 .5rem;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+/***** End CONTACT *****/
