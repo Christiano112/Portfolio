@@ -343,6 +343,9 @@ nav ul li:last-child .nav-link {
     font-size: 1rem;
     padding: 0.5rem 1rem;
   }
+  .home .main-image {
+    display: none;
+  }
   .testimonials {
     position: relative;
     padding-top: 9rem;
